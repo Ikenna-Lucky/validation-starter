@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Form Validation - Easy Tutorials YouTube Channel</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./fontawesome icon/all.min.css">
+  <link rel="stylesheet" href="./fontawesome icon/fontawesome.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <form id="form">
+      <i class="fa-solid fa-paper-plane"></i>
+      <div class="input-group">
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name" id="name-contact" onkeyup="nameValidation()">
+        <span id="name-error"></span>
+      </div>
+
+      <div class="input-group">
+        <label>Phone No.</label>
+        <span id="phone-error"></span>
+        <input type="tel" placeholder="123 456 7890" id="phone-contact" maxlength="11" onkeyup="phoneValidation()">
+        <span id="phone-error"></span>
+      </div>
+
+      <div class="input-group">
+        <label>Email Id</label>
+        <input type="email" placeholder="Enter Email" id="email-contact" onkeyup="emailValidation()">
+        <span id="email-error"></span>
+      </div>
+
+      <div class="input-group">
+        <label>Your Message</label>
+        <textarea rows="5" placeholder="Enter your message" id="message-contact" onkeyup="messageValid()"></textarea>
+        <span id="message-error"></span>
+      </div>
+
+      <button type="submit" id="button">Submit</button>
+      <span id="submit-error"></span>
+    </form>
+  </div>
+  <script src="./script.js"></script>
+</body>
+
+</html>
